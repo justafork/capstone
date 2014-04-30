@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+	<!-- handle favicon-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="icon" type="image/ico" href="favicon.ico">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	<link rel="shortcut icon" sizes="196x196" href="icon-196x196.png">
+	
+	<!--custom styles and scripts-->
+	<script src="js/myLabSheets.js"></script>
+	<script src="js/conversions.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/myLabSheets.css">
+	
+	<title>myLabSheets - convert</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="wrapper">
+		
+		<!--begin navigation-->
+			<div class="nav">
+				<div class="navBox">
+					<a href="index.html"><img src="images/icon_home.png" alt="home"></a>
+				</div> <!--/navBox-->
+				<!--convert-->
+				<div class="navBox navBoxActive">
+					<img src="images/icon_active_convert.png" alt="convert">
+				</div> <!--/navBox-->
+				<!--scale-->
+				<div class="navBox">
+					<a href="scale.html"><img src="images/icon_inactive_scale.png" alt="scale"></a>
+				</div> <!--/navBox-->
+				<!--add image-->
+				<div class="navBox">
+					<a href="images.html"><img src="images/icon_inactive_add.png" alt="add image"></a>
+				</div> <!--/navBox-->
+				<!--view images-->
+				<div class="navBox">
+					<a href="contact.html"><img src="images/icon_inactive_contact.png" alt="contact"></a>
+				</div> <!--/navBox-->
+				<div class="clearfix"></div>
+			</div> <!--/navHome-->
+		
+			<div class="clearfix"></div>
+			
+			<div class="headingPage">
+				<h1>Convert</h1>
+			</div> <!--/heading-->
+		<!--/navigation-->	
+		
+			<form class="formConvert">
+				<span class="heading">Enter Amount: </span><input id="origAmount" type="number">
+				<select name="origUnit" id="origUnit">
+					<optgroup label="Volume"></optgroup>
+					<option value="dash">dash</option>
+					<option value="tsp">tsp</option>
+					<option value="Tbl">Tbl</option>
+					<option value="floz">fl oz</option>
+					<option value="cup">cup</option>
+					<option value="pint">pint</option>
+					<option value="litre">litre</option>
+					<option value="quart">quart</option>
+					<option value="gallon">gallon</option>
+					<optgroup label="Weight"></optgroup>
+					<option value="gram">g</option>
+					<option value="oz">oz</option>
+					<option value="lb">lb</option>			
+				</select>
+				<br>
+				<button id="convertBtn" type="submit" >Convert</button>
+				<button id="clearBtn_convert" type="reset" >Clear</button>
+			</form>
+			<div class="grid">
+				<h4>Volume</h4>
+				<div class="boxConvert">
+					<p id="gridDash" class="gridVolume">-</p>dash
+				</div>
+				<div class="boxConvert">
+					<p id="gridTsp" class="gridVolume">-</p>tsp
+				</div>
+				<div class="boxConvert">
+					<p id="gridTbl" class="gridVolume">-</p>Tbl
+				</div>
+				<div class="boxConvert">
+					<p id="gridFloz" class="gridVolume">-</p>fl oz
+				</div>
+				<div class="boxConvert">
+					<p id="gridCup" class="gridVolume">-</p>cup
+				</div>
+				<div class="boxConvert">
+					<p id="gridPint" class="gridVolume">-</p>pint
+				</div>
+				<div class="boxConvert">
+					<p id="gridLitre" class="gridVolume">-</p>litre
+				</div>
+				<div class="boxConvert">
+					<p id="gridQuart" class="gridVolume">-</p>quart
+				</div>
+				<div class="boxConvert">
+					<p id="gridGallon" class="gridVolume">-</p>gallon
+				</div>
+				<div class="clearfix"></div>
+				<br>
+				<h4>Weight</h4>
+				<div class="boxConvert">
+					<p id="gridGram" class="gridWeight">-</p>gram
+				</div>
+				<div class="boxConvert">
+					<p id="gridOz" class="gridWeight">-</p>oz
+				</div>
+				<div class="boxConvert">
+					<p id="gridLb" class="gridWeight">-</p>lb
+				</div>
+				
+			</div> <!--/grid-->
+		</div> <!--/wrapper-->
+	</div> <!--/container-->
+</body>
+</html>

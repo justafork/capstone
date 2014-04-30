@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+	<!-- handle favicon-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="icon" type="image/ico" href="favicon.ico">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	<link rel="shortcut icon" sizes="196x196" href="icon-196x196.png">
+	
+	<!--custom styles and scripts-->
+	<script src="js/myLabSheets.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/myLabSheets.css">
+	
+	<title>myLabSheets - contact</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="wrapper">
+			
+			<!--begin navigation-->
+			<div class="nav">
+				<div class="navBox">
+					<a href="index.html"><img src="images/icon_home.png" alt="home"></a>
+				</div> <!--/navBox-->
+				<!--convert-->
+				<div class="navBox navBoxActive">
+					<a href="convert.html"><img src="images/icon_inactive_convert.png" alt="convert"></a>
+				</div> <!--/navBox-->
+				<!--scale-->
+				<div class="navBox">
+					<a href="scale.html"><img src="images/icon_inactive_scale.png" alt="scale"></a>
+				</div> <!--/navBox-->
+				<!--add image-->
+				<div class="navBox">
+					<a href="images.html"><img src="images/icon_inactive_add.png" alt="add image"></a>
+				</div> <!--/navBox-->
+				<!--view images-->
+				<div class="navBox">
+					<img src="images/icon_active_contact.png" alt="contact">
+				</div> <!--/navBox-->
+				<div class="clearfix"></div>
+			</div> <!--/navHome-->
+		
+			<div class="clearfix"></div>
+			
+			<div class="headingPage">
+				<h1>Contact</h1>
+			</div> <!--/heading-->
+		<!--/navigation-->
+			
+			<form id="formContact">
+				<h2>launch notification</h2>
+				<h4>we'll email you when we launch</h4>
+				<input id="fname" name="fname" type="text" placeholder="first name"><br>
+				<input id="lname" name="lname" type="text" placeholder="last name"><br>
+				<input id="email" name="email" type="text" placeholder="email"><br>
+				<button id="btnContact">send</button>
+				<button id="btnContactReset" type="reset">clear</button>
+			</form>
+			
+			<div id="formContactConfirm"></div>
+			
+		</div> <!--/wrapper-->
+	</div> <!--/container-->
+</body>
+</html>

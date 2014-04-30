@@ -1,0 +1,114 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway|Quicksand|Open+Sans|Lato|Josephin+Sans|News+Cycle|Archivo+Narrow|Advent+Pro');
+
+/*----------Colors old----------
+	black: 	3a3f44
+	brown:	79644f
+	 gray: 	ebebeb
+	  tan:	b2a289
+  ----------Colors----------*/
+  
+ /*-----Colors new-----*/
+
+/*------CSS Reset------*/
+* {
+	box-sizing: border-box;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	}
+
+	
+/*------HTML------*/
+body {
+	background-color: #ebebeb;
+	color: #3a3f44;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	width: 100vw;
+	}
+
+.carouselTEMP {
+	background: #b2a289;
+	color: #fff;
+	padding-bottom: 3%;
+	padding-top: 1%;
+	text-align: center;
+	}
+	
+.carouselTEMP img {
+	width: 200px;
+	}
+	
+footer {
+	background-color: #3a3f44;
+	color: #ccc;
+	text-align: center;
+	width: 100%;
+	}
+	
+.form {
+	margin: 2%;
+	margin-left: 45%;
+	width: 50%;
+	}
+
+.form p {
+	margin-bottom: 5px;
+	margin-top: 10px;
+	}
+	
+header {
+	background-color: #3a3f44;
+	color: #ccc;
+	text-align: center;
+	width: 100%;
+	}
+	
+input {
+	border: none;
+	margin: 3px;
+	padding: 2px;
+	}
+
+input[type="file"] label {
+	display: hidden;
+	}
+	
+.myEmail, .myName {
+	font-family: 'Raleway', sans-serif;
+	}
+	
+.myEmail {
+	font-size: 150%;
+	margin-bottom: 1%;
+	padding-top: 2%;
+	width: 100%;
+	}
+
+.myInfo {
+	text-align: center;
+	width: 64%;
+	}
+	
+.myName {
+	font-size: 500%;
+	width: 100%;
+	}
+
+.nav {
+	text-align: center;
+	padding-top: 1%;
+	z-index: 50;
+	}
+
+.nav img {
+	width: 25px;
+	}
+	
+.toggle {
+	display: none;
+	z-index: -50;
+	}
+
+/*------Media Queries------*/

@@ -6,6 +6,10 @@
  "url": "https://github.com/justafork/capstone"
  },
 
+ "scripts": {
+ "start": "node app.js"
+ },
+ 
  "dependencies": {
 	"formidable":"*",
 	"fs-extra":"*"
